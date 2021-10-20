@@ -1,0 +1,10 @@
+Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn. 
+
+n  =  int ( input ( "Введите число -" ))
+total  = ( n  +  int ( str ( n ) +  str ( n )) +  int ( str ( n ) +  str ( n ) +  str ( n )))
+print ( "Сумма чисел n + nn + nnn -% d"  %  total )
+
+Введите число -4
+Сумма чисел n + nn + nnn - 492
+
+Process finished with exit code 0
