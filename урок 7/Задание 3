@@ -1,0 +1,49 @@
+Вкласс  Cell :
+    __count_cell : ИНТ
+
+    def  __init__ ( self , count_cell : int ):
+        я . __count_cell  =  count_cell
+
+    def  __add__ ( я , другое ):   # сложение
+        значение  =  себя . count  +  другое . считать
+        return  Cell ( значение )
+
+    def  __sub__ ( self , other ):   # вычитание
+        значение  =  себя . count  -  другое . считать
+        return  Cell ( значение )
+
+    def  __mul__ ( self , other ):   # умножение
+        значение  =  себя . количество  *  другое . считать
+        return  Cell ( значение )
+
+    def  __truediv__ ( self , other ):   # деление
+        Значение  =  круглый ( сам . кол  /  самостоятельно . кол )
+        return  Cell ( значение )
+
+    def  __str__ ( сам ):
+        return  str ( self . __count_cell )
+
+    @ свойство
+    def  count ( self ):
+        вернуть  себя . __count_cell
+
+    @ staticmethod
+    def  make_order ( cell_object : 'Cell' , count_per_row : int ):
+        items  =  '*'  *  объект_ячейки . считать
+        блок  = [
+            элементы [ idx : idx  +  count_per_row ]
+            для  idx  в  диапазоне ( 0 , len ( элементы ), count_per_row )
+        ]
+        верните  ' \ n ' . присоединиться ( заблокировать )
+
+
+a  =  Ячейка ( 12 )
+b  =  Ячейка ( 7 )
+c  =  Ячейка ( 17 )
+
+print ( f "Сложение:   { a } + { b } = { a  +  b } " )
+print ( f "Вычитание: { a } - { b } = { a  -  b } " )
+print ( f "Умножение: { a } * { b } = { a  *  b } " )
+print ( f "Деление:    { a } / { b } = { a  /  b } " )
+print ( f "Вывод метода make_order ( { c } , 5)" )
+печать ( Cell . make_order ( с , 5 ))
